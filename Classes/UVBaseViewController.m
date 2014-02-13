@@ -176,7 +176,7 @@
     uv.backgroundColor = [UIColor clearColor];
     uv.textAlignment = NSTextAlignmentCenter;
     UILabel *version = [UILabel new];
-    version.text = [NSString stringWithFormat:@"iOS SDK v%@", [UserVoice version]];
+    version.text = [NSString stringWithFormat:NSLocalizedStringFromTable(@"iOS SDK v%@", @"UserVoice", nil), [UserVoice version]];
     version.font = [UIFont systemFontOfSize:13];
     version.textColor = [UIColor lightGrayColor];
     version.textAlignment = NSTextAlignmentCenter;

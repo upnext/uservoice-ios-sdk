@@ -50,7 +50,7 @@
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     NSString *detail;
     if ([UVSession currentSession].forum.suggestionsCount == 1) {
-        detail = NSLocalizedStringFromTable(@"2 idea", @"UserVoice", nil);
+        detail = NSLocalizedStringFromTable(@"1 idea", @"UserVoice", nil);
     } else {
         detail = [NSString stringWithFormat:NSLocalizedStringFromTable(@"%@ ideas", @"UserVoice", nil), [UVUtils formatInteger:[UVSession currentSession].forum.suggestionsCount]];
     }
